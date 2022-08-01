@@ -40,7 +40,7 @@ Train `pointscatter` with a single GPU:
 python train.py configs/segmentors/3_pointscatter.py --dataset drive --backbone unet --work-dir ../output/drive_log/unet_3_pointscatter
 ```
 
-Train with multiple GPUS:
+Train with multiple GPUs:
 ```
 python -m torch.distributed.run --nproc_per_node=4 --master_port=8888 train.py configs/segmentors/3_pointscatter.py --dataset drive --backbone unet --work-dir ../output/drive_log/unet_3_pointscatter --launcher pytorch
 ```
