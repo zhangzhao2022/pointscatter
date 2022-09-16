@@ -1,6 +1,6 @@
 # PointScatter based on MMSegmentation
 
-An alternative of the segmentation models for the tubular structure extraction task.
+This is an implementation of the paper [PointScatter: Point Set Representation for Tubular Structure Extraction](https://arxiv.org/abs/2209.05774) (ECCV2022 Oral).
 
 
 # Installation
