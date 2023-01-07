@@ -50,6 +50,10 @@ Test a trained model:
 python test.py configs/segmentors/3_pointscatter.py  ../output/drive_log/unet_3_pointscatter/latest.pth --dataset drive --backbone unet --work-dir ../output/drive_log/unet_3_pointscatter --eval mDice
 ```
 
+Pretrained Models can be found:  
+[**Google Drive**](https://drive.google.com/drive/folders/1sO6mM74ZXzm8KeHIIhQ-__xtAh102ywW?usp=share_link)  
+[**Baidu Cloud**](https://pan.baidu.com/s/1iyqFL_8j34EhPkSKQf8X7w?pwd=eki7)
+
 # Customize models
 You can customize your own model by:
 ```
