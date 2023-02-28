@@ -27,7 +27,8 @@ class PointLoss(nn.Module):
 
         if self.ske_label:
             target = target.cpu().numpy()
-            target = torch.from_numpy(skeletonize(target).astype(np.uint8)).to(pred_scores.device).long()
+            target = np.stack([skeletonize(target[t]).astype(np.uint8) for t in range(target.shape[0])])
+            target = torch.from_numpy(target).to(pred_scores.device).long()
 
         target = target.view(B, H, M, W, M)
 
